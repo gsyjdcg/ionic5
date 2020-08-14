@@ -11,12 +11,14 @@ import { AppRoutingModule } from './app-routing.module';
 
 import { TableVirtualScrollModule } from 'ng-table-virtual-scroll';
 import { MatTableModule } from '@angular/material/table';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [AppComponent],
   entryComponents: [],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-     TableVirtualScrollModule, MatTableModule],
+     TableVirtualScrollModule, MatTableModule, ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })],
   providers: [
     StatusBar,
     SplashScreen,
