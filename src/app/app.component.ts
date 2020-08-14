@@ -30,8 +30,19 @@ export class AppComponent {
   }
 
   test(): void {
-    const urlPrueba = 'https://www.pickar.es/api/registros/informeJornadasUsuariosPDF?ids=%5B%7B%22id%22%3A%225ca4ae27eaba930733d2b74a%22%2C%22tipo%22%3A%22usuarios%22%7D%5D&access_token=EyXEADDa4aUYj3J5DE2L39OQnJqI4NLyuEVlpL5sTh5v8CPNhRHt8E8JVZ2pR06N&entidId=herbecon&intervalo=semana&languageClient=es&incluirRegistros=false&incluirLocalizacion=false';
-
-    this.iab.create(urlPrueba, `_system`);
+    alert('android: ' + this.platform.is('android'));
+    alert('ios: ' + this.platform.is('ios'));
+    alert('cordova: ' + this.platform.is('cordova'));
+    alert('capacitor: ' + this.platform.is('capacitor'));
+    alert('desktop: ' + this.platform.is('desktop'));
+    alert('electron: ' + this.platform.is('electron'));
+    alert('hybrid: ' + this.platform.is('hybrid'));
+    alert('ipad: ' + this.platform.is('ipad'));
+    alert('iphone: ' + this.platform.is('iphone'));
+    alert('mobile: ' + this.platform.is('mobile'));
+    alert('mobileweb: ' + this.platform.is('mobileweb'));
+    alert('phablet: ' + this.platform.is('phablet'));
+    alert('pwa: ' + this.platform.is('pwa'));
+    alert('tablet: ' + this.platform.is('tablet'));
   }
 }
