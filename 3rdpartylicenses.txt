@@ -97,6 +97,9 @@ MIT
 @ionic-native/core
 MIT
 
+@ionic-native/in-app-browser
+MIT
+
 @ionic-native/splash-screen
 MIT
 
