@@ -9,10 +9,12 @@
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "build:prod": "ionic build --prod -- --base-href https://gsyjdcg.github.io/ionic5/ && npx angular-cli-ghpages --branch=gh-pages --dir=www"
   },
   "private": true,
   "dependencies": {
+    "@angular-devkit/build-angular": "~0.901.5",
     "@angular/animations": "~9.1.6",
     "@angular/cdk": "^9.2.4",
     "@angular/common": "~9.1.6",
